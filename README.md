@@ -34,14 +34,3 @@ We use a news dataset that contains:
 | UMAP + Matplotlib | (Optional) Embedding visualization     |
 
 ---
-
-## 🧱 Architecture
-
-```mermaid
-graph TD;
-    A[Raw News Articles (CSV)] --> B[Databricks Notebook];
-    B --> C[Text Preprocessing];
-    C --> D[SentenceTransformer Embedding];
-    D --> E[embedded_df];
-    E --> F[FAISS Index];
-    F --> G[Semantic Search Interface];
